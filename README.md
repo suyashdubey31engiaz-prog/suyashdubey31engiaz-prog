@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=300&size=22&duration=3000&pause=900&color=C0982A&center=true&vCenter=true&width=700&lines=I+build+real-time%2C+scalable+systems+%F0%9F%9A%80;Backend+architect+%7C+Auth+systems+%7C+AI+engines;Currently+%40+IQ-Line+Private+Limited+%F0%9F%92%BC;320%2B+DSA+problems+solved+on+LeetCode;A+person%27s+story+ends+only+when+forgotten..." alt="Typing SVG"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=300&size=22&duration=3000&pause=900&color=C0982A&center=true&vCenter=true&width=700&lines=I+build+real-time%2C+scalable+systems+%F0%9F%9A%80;Backend+architect+%7C+Auth+systems+%7C+AI+engines;Currently+%40+IQ-Line+Private+Limited+%F0%9F%92%BC;A+person%27s+story+ends+only+when+forgotten..." alt="Typing SVG"/>
 </p>
 
 <p align="center">
