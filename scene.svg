@@ -1,0 +1,361 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%"   stop-color="#030508"/>
+    <stop offset="65%"  stop-color="#0c1020"/>
+    <stop offset="100%" stop-color="#181208"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="lglow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="8" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="sglow" x="-200%" y="-200%" width="500%" height="500%">
+    <feGaussianBlur stdDeviation="15" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%" gradientUnits="objectBoundingBox">
+    <stop offset="30%" stop-color="rgba(0,0,0,0)"/>
+    <stop offset="100%" stop-color="rgba(0,0,0,0.55)"/>
+  </radialGradient>
+  <style>
+    @keyframes tw{0%,100%{opacity:.08}50%{opacity:.88}}
+    .s0{animation:tw 2.2s infinite}.s1{animation:tw 3.0s .6s infinite}
+    .s2{animation:tw 1.8s 1.3s infinite}.s3{animation:tw 2.6s .3s infinite}
+    .s4{animation:tw 3.4s 1.8s infinite}.s5{animation:tw 2.0s .9s infinite}
+    .s6{animation:tw 3.7s 2.2s infinite}.s7{animation:tw 1.6s .4s infinite}
+    .s8{animation:tw 2.8s 1.5s infinite}.s9{animation:tw 3.2s .7s infinite}
+    .s10{animation:tw 2.4s 2.4s infinite}.s11{animation:tw 1.5s 1.0s infinite}
+    .s12{animation:tw 3.1s 0.2s infinite}.s13{animation:tw 2.1s 1.6s infinite}
+    .s14{animation:tw 3.6s 0.8s infinite}.s15{animation:tw 1.9s 2.6s infinite}
+    .s16{animation:tw 2.7s 1.2s infinite}.s17{animation:tw 3.3s 0.5s infinite}
+    .s18{animation:tw 2.3s 2.0s infinite}.s19{animation:tw 1.7s 1.4s infinite}
+    @keyframes mp{0%,100%{opacity:.5}50%{opacity:.88}}
+    .moon-r{animation:mp 5s ease-in-out infinite}
+    .moon-g{animation:mp 5s 1.2s ease-in-out infinite}
+    @keyframes c1{from{transform:translateX(-200px)}to{transform:translateX(1060px)}}
+    @keyframes c2{from{transform:translateX(-240px)}to{transform:translateX(1060px)}}
+    @keyframes c3{from{transform:translateX(-160px)}to{transform:translateX(1060px)}}
+    @keyframes c4{from{transform:translateX(-180px)}to{transform:translateX(1060px)}}
+    .cl1{animation:c1 28s linear infinite}
+    .cl2{animation:c2 38s 13s linear infinite}
+    .cl3{animation:c3 22s 7s linear infinite}
+    .cl4{animation:c4 44s 25s linear infinite}
+    @keyframes cr{from{transform:translateX(-110px)}to{transform:translateX(1010px)}}
+    @keyframes cl{from{transform:translateX(1010px)}to{transform:translateX(-110px)}}
+    .car-r1{animation:cr 9s 0s linear infinite}
+    .car-r2{animation:cr 14s 5s linear infinite}
+    .car-r3{animation:cr 11s 9s linear infinite}
+    .car-l1{animation:cl 12s 3s linear infinite}
+    @keyframes lf{0%,75%,79%,83%,100%{opacity:0}76%{opacity:1}78%{opacity:.15}80%{opacity:.85}82%{opacity:.05}}
+    @keyframes lg{0%,75%,88%,100%{opacity:0}76%{opacity:.22}80%{opacity:.16}86%{opacity:.04}}
+    @keyframes lf2{0%,60%,64%,68%,100%{opacity:0}61%{opacity:.88}63%{opacity:.1}65%{opacity:.72}67%{opacity:.04}}
+    .lt1{animation:lf 8s 1.5s infinite}
+    .lt1g{animation:lg 8s 1.5s infinite}
+    .lt2{animation:lf2 11s 4.2s infinite}
+    .lt2g{animation:lg 11s 4.4s infinite}
+  </style>
+</defs>
+
+<!-- SKY -->
+<rect width="900" height="240" fill="url(#sky)"/>
+
+<!-- MOON -->
+<circle class="moon-g" cx="755" cy="42" r="30" fill="rgba(200,160,50,0.10)" filter="url(#sglow)"/>
+<circle class="moon-r" cx="755" cy="42" r="20" fill="rgba(220,178,68,0.08)"/>
+<circle cx="755" cy="42" r="15" fill="rgba(200,165,60,0.07)"/>
+<circle class="moon-r" cx="755" cy="42" r="18" fill="none" stroke="rgba(200,160,50,0.52)" stroke-width="0.8"/>
+
+<!-- STARS -->
+<circle class="s0"  cx="38"  cy="15"  r="1.0" fill="#fff"/>
+<circle class="s1"  cx="82"  cy="7"   r="0.7" fill="#fff"/>
+<circle class="s2"  cx="128" cy="21"  r="0.9" fill="#eef"/>
+<circle class="s3"  cx="188" cy="11"  r="0.8" fill="#fff"/>
+<circle class="s4"  cx="240" cy="27"  r="1.1" fill="#fff"/>
+<circle class="s5"  cx="298" cy="8"   r="0.7" fill="#fff"/>
+<circle class="s6"  cx="348" cy="18"  r="0.9" fill="#eef"/>
+<circle class="s7"  cx="402" cy="6"   r="0.8" fill="#fff"/>
+<circle class="s8"  cx="462" cy="23"  r="1.0" fill="#fff"/>
+<circle class="s9"  cx="518" cy="13"  r="0.7" fill="#fff"/>
+<circle class="s10" cx="580" cy="7"   r="0.9" fill="#fff"/>
+<circle class="s11" cx="628" cy="19"  r="0.8" fill="#eef"/>
+<circle class="s12" cx="680" cy="10"  r="1.0" fill="#fff"/>
+<circle class="s13" cx="810" cy="15"  r="0.8" fill="#fff"/>
+<circle class="s14" cx="858" cy="26"  r="0.7" fill="#fff"/>
+<circle class="s15" cx="20"  cy="34"  r="0.6" fill="#aac"/>
+<circle class="s16" cx="162" cy="36"  r="0.6" fill="#fff"/>
+<circle class="s17" cx="274" cy="33"  r="0.7" fill="#fff"/>
+<circle class="s18" cx="444" cy="32"  r="0.6" fill="#fff"/>
+<circle class="s19" cx="560" cy="29"  r="0.8" fill="#fff"/>
+<circle class="s2"  cx="710" cy="36"  r="0.7" fill="#fff"/>
+<circle class="s5"  cx="830" cy="8"   r="0.8" fill="#fff"/>
+<circle class="s8"  cx="882" cy="21"  r="0.6" fill="#fff"/>
+<circle class="s11" cx="150" cy="44"  r="0.5" fill="#aac"/>
+<circle class="s14" cx="380" cy="40"  r="0.6" fill="#fff"/>
+<circle class="s0"  cx="640" cy="44"  r="0.5" fill="#fff"/>
+<circle class="s3"  cx="490" cy="42"  r="0.6" fill="#fff"/>
+<circle class="s7"  cx="320" cy="46"  r="0.5" fill="#fff"/>
+<circle class="s10" cx="88"  cy="44"  r="0.6" fill="#fff"/>
+
+<!-- FAR MOUNTAINS -->
+<path d="M0,178 Q40,128 80,162 Q125,100 170,145 Q215,82 260,132 Q305,70 355,118 Q400,58 448,105 Q495,75 540,118 Q588,88 632,128 Q672,62 718,108 Q758,78 800,115 Q838,90 880,118 L900,120 L900,240 L0,240Z" fill="#080a0d" opacity="0.93"/>
+
+<!-- NEAR MOUNTAINS -->
+<path d="M0,198 Q55,168 100,185 Q155,150 205,175 Q260,138 318,170 Q372,150 425,178 Q478,158 535,180 Q592,148 648,175 Q705,155 758,180 Q812,162 862,182 L900,184 L900,240 L0,240Z" fill="#0c0e13"/>
+
+<!-- GROUND HILLS -->
+<path d="M0,215 Q70,200 130,212 Q190,198 255,213 Q315,202 380,216 Q445,204 510,218 Q575,206 635,216 Q700,203 762,215 Q822,206 900,214 L900,240 L0,240Z" fill="#101218"/>
+
+<!-- ═══════════════════════════════
+     BUILDING A — left small pagoda
+═══════════════════════════════ -->
+<g opacity="0.78">
+  <rect x="68" y="158" width="50" height="82" fill="#090a0f" stroke="rgba(255,255,255,0.11)" stroke-width="0.7"/>
+  <rect x="79"  y="168" width="8"  height="11" fill="rgba(255,200,80,0.05)" stroke="rgba(255,200,80,0.20)" stroke-width="0.5"/>
+  <rect x="98"  y="168" width="8"  height="11" fill="rgba(255,200,80,0.05)" stroke="rgba(255,200,80,0.20)" stroke-width="0.5"/>
+  <rect x="79"  y="188" width="8"  height="11" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.15)" stroke-width="0.5"/>
+  <rect x="98"  y="188" width="8"  height="11" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.15)" stroke-width="0.5"/>
+  <rect x="79"  y="208" width="8"  height="10" fill="rgba(255,200,80,0.03)" stroke="rgba(255,200,80,0.12)" stroke-width="0.5"/>
+  <rect x="98"  y="208" width="8"  height="10" fill="rgba(255,200,80,0.03)" stroke="rgba(255,200,80,0.12)" stroke-width="0.5"/>
+  <!-- Roof tier 3 -->
+  <line x1="55"  y1="158" x2="131" y2="158" stroke="rgba(255,255,255,0.14)" stroke-width="0.8"/>
+  <line x1="55"  y1="158" x2="62"  y2="148" stroke="rgba(255,255,255,0.11)" stroke-width="0.7"/>
+  <line x1="131" y1="158" x2="124" y2="148" stroke="rgba(255,255,255,0.11)" stroke-width="0.7"/>
+  <line x1="62"  y1="148" x2="124" y2="148" stroke="rgba(255,255,255,0.11)" stroke-width="0.7"/>
+  <line x1="55"  y1="158" x2="43"  y2="154" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+  <line x1="131" y1="158" x2="143" y2="154" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+  <!-- Roof tier 2 -->
+  <line x1="64"  y1="148" x2="122" y2="148" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="66"  y1="148" x2="73"  y2="138" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="120" y1="148" x2="113" y2="138" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="73"  y1="138" x2="113" y2="138" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="66"  y1="148" x2="56"  y2="144" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <line x1="120" y1="148" x2="130" y2="144" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <!-- Roof tier 1 -->
+  <line x1="75"  y1="138" x2="111" y2="138" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="77"  y1="138" x2="84"  y2="128" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="109" y1="138" x2="102" y2="128" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="84"  y1="128" x2="102" y2="128" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="77"  y1="138" x2="68"  y2="135" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <line x1="109" y1="138" x2="118" y2="135" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <!-- Spire -->
+  <line x1="93"  y1="128" x2="93"  y2="106" stroke="rgba(255,255,255,0.15)" stroke-width="0.9"/>
+  <line x1="89"  y1="120" x2="97"  y2="120" stroke="rgba(255,255,255,0.11)" stroke-width="0.7"/>
+  <line x1="90"  y1="113" x2="96"  y2="113" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <circle cx="93" cy="105" r="2.2" fill="rgba(200,160,60,0.45)" filter="url(#glow)"/>
+</g>
+
+<!-- ═══════════════════════════════
+     BUILDING B — center tallest pagoda
+═══════════════════════════════ -->
+<g opacity="0.92">
+  <rect x="375" y="118" width="68" height="122" fill="#070810" stroke="rgba(255,255,255,0.14)" stroke-width="0.8"/>
+  <rect x="388" y="130" width="11" height="15" fill="rgba(255,200,80,0.07)" stroke="rgba(255,200,80,0.28)" stroke-width="0.5"/>
+  <rect x="411" y="130" width="11" height="15" fill="rgba(255,200,80,0.07)" stroke="rgba(255,200,80,0.28)" stroke-width="0.5"/>
+  <rect x="388" y="155" width="11" height="15" fill="rgba(255,200,80,0.06)" stroke="rgba(255,200,80,0.22)" stroke-width="0.5"/>
+  <rect x="411" y="155" width="11" height="15" fill="rgba(255,200,80,0.06)" stroke="rgba(255,200,80,0.22)" stroke-width="0.5"/>
+  <rect x="388" y="180" width="11" height="15" fill="rgba(255,200,80,0.05)" stroke="rgba(255,200,80,0.18)" stroke-width="0.5"/>
+  <rect x="411" y="180" width="11" height="15" fill="rgba(255,200,80,0.05)" stroke="rgba(255,200,80,0.18)" stroke-width="0.5"/>
+  <rect x="388" y="205" width="11" height="14" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.13)" stroke-width="0.5"/>
+  <rect x="411" y="205" width="11" height="14" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.13)" stroke-width="0.5"/>
+  <!-- Roof tier 4 -->
+  <line x1="355" y1="118" x2="463" y2="118" stroke="rgba(255,255,255,0.16)" stroke-width="0.9"/>
+  <line x1="355" y1="118" x2="364" y2="106" stroke="rgba(255,255,255,0.13)" stroke-width="0.8"/>
+  <line x1="463" y1="118" x2="454" y2="106" stroke="rgba(255,255,255,0.13)" stroke-width="0.8"/>
+  <line x1="364" y1="106" x2="454" y2="106" stroke="rgba(255,255,255,0.13)" stroke-width="0.8"/>
+  <line x1="355" y1="118" x2="342" y2="113" stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <line x1="463" y1="118" x2="476" y2="113" stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <!-- Roof tier 3 -->
+  <line x1="367" y1="106" x2="451" y2="106" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+  <line x1="369" y1="106" x2="378" y2="94"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="449" y1="106" x2="440" y2="94"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="378" y1="94"  x2="440" y2="94"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="369" y1="106" x2="358" y2="102" stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <line x1="449" y1="106" x2="460" y2="102" stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <!-- Roof tier 2 -->
+  <line x1="381" y1="94"  x2="437" y2="94"  stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+  <line x1="383" y1="94"  x2="392" y2="82"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="435" y1="94"  x2="426" y2="82"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="392" y1="82"  x2="426" y2="82"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="383" y1="94"  x2="372" y2="90"  stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <line x1="435" y1="94"  x2="446" y2="90"  stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <!-- Roof tier 1 -->
+  <line x1="395" y1="82"  x2="423" y2="82"  stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+  <line x1="397" y1="82"  x2="404" y2="70"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="421" y1="82"  x2="414" y2="70"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="404" y1="70"  x2="414" y2="70"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="397" y1="82"  x2="387" y2="79"  stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <line x1="421" y1="82"  x2="431" y2="79"  stroke="rgba(255,255,255,0.09)" stroke-width="0.7"/>
+  <!-- Spire -->
+  <line x1="409" y1="70"  x2="409" y2="38"  stroke="rgba(255,255,255,0.18)" stroke-width="1.1"/>
+  <line x1="404" y1="62"  x2="414" y2="62"  stroke="rgba(255,255,255,0.14)" stroke-width="0.8"/>
+  <line x1="405" y1="55"  x2="413" y2="55"  stroke="rgba(255,255,255,0.12)" stroke-width="0.7"/>
+  <line x1="406" y1="48"  x2="412" y2="48"  stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <circle cx="409" cy="37" r="3"   fill="rgba(210,165,55,0.52)" filter="url(#glow)"/>
+  <circle cx="409" cy="37" r="1.8" fill="rgba(245,205,75,0.92)"/>
+</g>
+
+<!-- ═══════════════════════════════
+     BUILDING C — right wide temple
+═══════════════════════════════ -->
+<g opacity="0.76">
+  <rect x="618" y="162" width="95" height="78" fill="#08090e" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="634" y1="162" x2="634" y2="240" stroke="rgba(255,255,255,0.09)" stroke-width="0.6"/>
+  <line x1="650" y1="162" x2="650" y2="240" stroke="rgba(255,255,255,0.09)" stroke-width="0.6"/>
+  <line x1="666" y1="162" x2="666" y2="240" stroke="rgba(255,255,255,0.09)" stroke-width="0.6"/>
+  <line x1="682" y1="162" x2="682" y2="240" stroke="rgba(255,255,255,0.09)" stroke-width="0.6"/>
+  <line x1="698" y1="162" x2="698" y2="240" stroke="rgba(255,255,255,0.09)" stroke-width="0.6"/>
+  <!-- Roof -->
+  <line x1="596" y1="162" x2="735" y2="162" stroke="rgba(255,255,255,0.12)" stroke-width="0.8"/>
+  <line x1="596" y1="162" x2="606" y2="149" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="735" y1="162" x2="725" y2="149" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="606" y1="149" x2="725" y2="149" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="608" y1="149" x2="618" y2="136" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="723" y1="149" x2="713" y2="136" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="618" y1="136" x2="713" y2="136" stroke="rgba(255,255,255,0.10)" stroke-width="0.7"/>
+  <line x1="596" y1="162" x2="582" y2="157" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <line x1="735" y1="162" x2="749" y2="157" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <line x1="606" y1="149" x2="592" y2="145" stroke="rgba(255,255,255,0.06)" stroke-width="0.6"/>
+  <line x1="725" y1="149" x2="739" y2="145" stroke="rgba(255,255,255,0.06)" stroke-width="0.6"/>
+  <line x1="665" y1="136" x2="665" y2="118" stroke="rgba(255,255,255,0.10)" stroke-width="0.8"/>
+  <line x1="660" y1="126" x2="670" y2="126" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+  <circle cx="665" cy="117" r="2"  fill="rgba(180,140,50,0.35)"/>
+  <rect x="628" y="170" width="9" height="12" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.16)" stroke-width="0.5"/>
+  <rect x="646" y="170" width="9" height="12" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.16)" stroke-width="0.5"/>
+  <rect x="664" y="170" width="9" height="12" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.16)" stroke-width="0.5"/>
+  <rect x="682" y="170" width="9" height="12" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.16)" stroke-width="0.5"/>
+  <rect x="700" y="170" width="9" height="12" fill="rgba(255,200,80,0.04)" stroke="rgba(255,200,80,0.16)" stroke-width="0.5"/>
+</g>
+
+<!-- BUILDING D — distant mid-left tower (faint) -->
+<g opacity="0.42">
+  <rect x="228" y="170" width="30" height="70" fill="#070810" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+  <line x1="216" y1="170" x2="270" y2="170" stroke="rgba(255,255,255,0.08)" stroke-width="0.6"/>
+  <line x1="216" y1="170" x2="222" y2="161" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="270" y1="170" x2="264" y2="161" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="222" y1="161" x2="264" y2="161" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="224" y1="161" x2="230" y2="152" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="262" y1="161" x2="256" y2="152" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="230" y1="152" x2="256" y2="152" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="243" y1="152" x2="243" y2="136" stroke="rgba(255,255,255,0.08)" stroke-width="0.7"/>
+  <line x1="239" y1="144" x2="247" y2="144" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <rect x="234" y="178" width="7" height="10" fill="none" stroke="rgba(255,200,80,0.10)" stroke-width="0.5"/>
+  <rect x="246" y="178" width="7" height="10" fill="none" stroke="rgba(255,200,80,0.10)" stroke-width="0.5"/>
+</g>
+
+<!-- BUILDING E — very distant far right (very faint) -->
+<g opacity="0.30">
+  <rect x="822" y="178" width="24" height="62" fill="#070810" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="812" y1="178" x2="858" y2="178" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <line x1="812" y1="178" x2="817" y2="170" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="858" y1="178" x2="853" y2="170" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="817" y1="170" x2="853" y2="170" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="819" y1="170" x2="824" y2="161" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="851" y1="170" x2="846" y2="161" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="824" y1="161" x2="846" y2="161" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
+  <line x1="834" y1="161" x2="834" y2="146" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+</g>
+
+<!-- CLOUDS -->
+<g class="cl1">
+  <ellipse cx="150" cy="55" rx="40"  ry="13" fill="#181c28" opacity="0.60"/>
+  <ellipse cx="128" cy="58" rx="26"  ry="10" fill="#181c28" opacity="0.55"/>
+  <ellipse cx="174" cy="59" rx="24"  ry="9"  fill="#181c28" opacity="0.55"/>
+  <ellipse cx="150" cy="53" rx="30"  ry="11" fill="#1c2232" opacity="0.42"/>
+</g>
+<g class="cl2">
+  <ellipse cx="260" cy="38" rx="55"  ry="15" fill="#161a25" opacity="0.50"/>
+  <ellipse cx="232" cy="41" rx="34"  ry="11" fill="#161a25" opacity="0.45"/>
+  <ellipse cx="288" cy="42" rx="30"  ry="10" fill="#161a25" opacity="0.45"/>
+  <ellipse cx="260" cy="36" rx="40"  ry="12" fill="#1a2030" opacity="0.36"/>
+</g>
+<g class="cl3">
+  <ellipse cx="480" cy="26" rx="46"  ry="9"  fill="#141822" opacity="0.40"/>
+  <ellipse cx="458" cy="28" rx="28"  ry="7"  fill="#141822" opacity="0.35"/>
+  <ellipse cx="506" cy="29" rx="26"  ry="6"  fill="#141822" opacity="0.35"/>
+</g>
+<g class="cl4">
+  <ellipse cx="680" cy="45" rx="34"  ry="10" fill="#121622" opacity="0.30"/>
+  <ellipse cx="662" cy="47" rx="22"  ry="8"  fill="#121622" opacity="0.27"/>
+  <ellipse cx="700" cy="48" rx="20"  ry="7"  fill="#121622" opacity="0.27"/>
+</g>
+
+<!-- GROUND / ROAD -->
+<rect x="0"   y="220" width="900" height="20" fill="#0e0c0a"/>
+<rect x="0"   y="222" width="900" height="16" fill="#141210" opacity="0.9"/>
+<line x1="0" y1="223" x2="900" y2="223" stroke="rgba(255,255,100,0.13)" stroke-width="0.8"/>
+<line x1="0" y1="237" x2="900" y2="237" stroke="rgba(255,255,100,0.13)" stroke-width="0.8"/>
+<line x1="0" y1="230" x2="900" y2="230" stroke="rgba(255,255,150,0.09)" stroke-width="0.7" stroke-dasharray="22,16"/>
+
+<!-- CARS -->
+<!-- Car R1 — sleek sedan going right -->
+<g class="car-r1">
+  <rect x="10" y="225" width="44" height="10" rx="3" fill="#1a1c22" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+  <rect x="16" y="219" width="30" height="8"  rx="2" fill="#161820" stroke="rgba(255,255,255,0.09)" stroke-width="0.5"/>
+  <circle cx="54" cy="230" r="2.2"  fill="#fffce0" opacity="0.92" filter="url(#glow)"/>
+  <circle cx="54" cy="230" r="4.5"  fill="rgba(255,250,200,0.16)"/>
+  <circle cx="11" cy="230" r="1.6"  fill="rgba(220,50,50,0.8)"/>
+  <circle cx="23" cy="235" r="3.5"  fill="#0c0e12" stroke="rgba(255,255,255,0.14)" stroke-width="0.7"/>
+  <circle cx="45" cy="235" r="3.5"  fill="#0c0e12" stroke="rgba(255,255,255,0.14)" stroke-width="0.7"/>
+</g>
+<!-- Car R2 — SUV going right -->
+<g class="car-r2">
+  <rect x="10" y="224" width="48" height="12" rx="2" fill="#13151b" stroke="rgba(255,255,255,0.10)" stroke-width="0.6"/>
+  <rect x="15" y="217" width="34" height="9"  rx="2" fill="#111318" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <circle cx="58" cy="230" r="2.2"  fill="#e8f0ff" opacity="0.88" filter="url(#glow)"/>
+  <circle cx="58" cy="230" r="4.5"  fill="rgba(200,220,255,0.14)"/>
+  <circle cx="11" cy="230" r="1.6"  fill="rgba(200,40,40,0.75)"/>
+  <circle cx="25" cy="236" r="3.5"  fill="#0c0d11" stroke="rgba(255,255,255,0.13)" stroke-width="0.7"/>
+  <circle cx="48" cy="236" r="3.5"  fill="#0c0d11" stroke="rgba(255,255,255,0.13)" stroke-width="0.7"/>
+</g>
+<!-- Car R3 — small fast one going right -->
+<g class="car-r3">
+  <rect x="10" y="226" width="36" height="9"  rx="3" fill="#181a20" stroke="rgba(255,255,255,0.09)" stroke-width="0.5"/>
+  <rect x="14" y="220" width="24" height="7"  rx="2" fill="#141618" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <circle cx="46" cy="230" r="1.8"  fill="#fff8e0" opacity="0.85" filter="url(#glow)"/>
+  <circle cx="11" cy="230" r="1.4"  fill="rgba(220,50,50,0.7)"/>
+  <circle cx="20" cy="235" r="3"    fill="#0c0e12" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+  <circle cx="38" cy="235" r="3"    fill="#0c0e12" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+</g>
+<!-- Car L1 — compact going left -->
+<g class="car-l1">
+  <rect x="844" y="226" width="40" height="10" rx="2" fill="#181a20" stroke="rgba(255,255,255,0.10)" stroke-width="0.6"/>
+  <rect x="848" y="220" width="28" height="7"  rx="2" fill="#141618" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <circle cx="844" cy="231" r="2"   fill="#fffce0" opacity="0.85" filter="url(#glow)"/>
+  <circle cx="844" cy="231" r="3.5" fill="rgba(255,250,200,0.14)"/>
+  <circle cx="883" cy="231" r="1.5" fill="rgba(220,50,50,0.7)"/>
+  <circle cx="853" cy="236" r="3"   fill="#0c0e12" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+  <circle cx="874" cy="236" r="3"   fill="#0c0e12" stroke="rgba(255,255,255,0.12)" stroke-width="0.6"/>
+</g>
+
+<!-- LIGHTNING -->
+<ellipse class="lt1g" cx="808" cy="105" rx="110" ry="145" fill="rgba(200,158,38,0.18)" filter="url(#sglow)"/>
+<ellipse class="lt2g" cx="848" cy="82"  rx="80"  ry="108" fill="rgba(200,158,38,0.12)" filter="url(#sglow)"/>
+<!-- Main bolt 1 -->
+<g class="lt1" filter="url(#glow)">
+  <polyline points="822,0 802,52 818,49 790,115 808,111 774,192 792,188 760,255"
+    stroke="rgba(200,158,38,0.45)" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="822,0 802,52 818,49 790,115 808,111 774,192 792,188 760,255"
+    stroke="rgba(255,255,255,0.88)" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <polyline points="822,0 802,52 818,49 790,115 808,111 774,192"
+    stroke="rgba(255,255,255,1)"   stroke-width="0.8" fill="none" stroke-linejoin="round"/>
+  <polyline points="790,115 756,143 740,138" stroke="rgba(255,255,255,0.62)" stroke-width="1.1" fill="none"/>
+  <polyline points="808,111 838,136 850,130" stroke="rgba(255,255,255,0.52)" stroke-width="1.0" fill="none"/>
+  <polyline points="802,52 828,72 840,67"   stroke="rgba(255,255,255,0.42)" stroke-width="0.9" fill="none"/>
+</g>
+<!-- Secondary bolt 2 -->
+<g class="lt2" filter="url(#glow)">
+  <polyline points="858,0 847,42 858,40 840,94 854,91 832,158"
+    stroke="rgba(200,158,38,0.28)" stroke-width="7" fill="none" stroke-linejoin="round"/>
+  <polyline points="858,0 847,42 858,40 840,94 854,91 832,158"
+    stroke="rgba(255,255,255,0.58)" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+  <polyline points="840,94 864,110 876,105" stroke="rgba(255,255,255,0.38)" stroke-width="0.9" fill="none"/>
+</g>
+
+<!-- OVERLAYS -->
+<rect x="0" y="208" width="900" height="32" fill="rgba(12,10,8,0.26)"/>
+<rect x="0" y="0"   width="900" height="240" fill="url(#vig)"/>
+</svg>
