@@ -36,7 +36,8 @@
 ## 🚀 Projects
 
 ### 🛡️ Journey Shield – Travel Safety App
-🔗 [Live Demo](https://journey-shield.vercel.app)
+🔗 [Live Demo](https://journey-shield.vercel.app)     
+🔗 [Documentation](https://suyashdubey31engiaz-prog.github.io/JourneyShield/)
 
 A comprehensive travel safety application integrating real-time safety assessments, dynamic routing, and location discovery via third-party APIs.
 - Built a robust Node.js/Express backend with secure JWT authentication and Role-Based Access Control (RBAC) to manage distinct Traveler and Guide dashboards.
